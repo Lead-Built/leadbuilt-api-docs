@@ -3765,7 +3765,7 @@
           "title": {
             "type": "string",
             "description": "Calendar Event title",
-            "example": "Appointment with GHL Dev team"
+            "example": "Appointment with LeadBuilt Dev team"
           },
           "calendarId": {
             "type": "string",

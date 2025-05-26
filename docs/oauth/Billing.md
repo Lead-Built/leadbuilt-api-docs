@@ -2,11 +2,11 @@
 
 This webhook is essential for externally billed apps within our marketplace. It must be accessed by developers to authorize the installation of the app.
 
-The primary purpose of this webhook is to capture and update payment information for apps that employ a Paid business model and do not utilize HighLevel's internal billing mechanism.
+The primary purpose of this webhook is to capture and update payment information for apps that employ a Paid business model and do not utilize LeadBuilt's internal billing mechanism.
 
 ## 1. Prerequisites for using this webhook
 
-Before using this webhook, ensure that you meet the following prerequisites on the [Marketplace](https://marketplace.gohighlevel.com):
+Before using this webhook, ensure that you meet the following prerequisites on the [Marketplace](https://marketplace.leadbuilt.com):
 
 1. You should have an app with a Business Model marked as Paid.
 2. External Billing must be enabled for your app.

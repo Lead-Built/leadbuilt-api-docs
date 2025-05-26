@@ -1,0 +1,136 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# LeadBuilt Branding and Naming Guidelines
+
+## Brand Name Usage
+
+### Correct Usage
+- **Primary Brand**: "LeadBuilt" (one word, camelCase)
+- **Platform Reference**: "Lead Built platform" (when referring to the service)
+- **API Reference**: "LeadBuilt API V2" (always include version)
+- **Company Reference**: "LeadBuilt" or "Lead Built" (context dependent)
+
+### Incorrect Usage (Legacy Names to Replace)
+- ❌ "GoHighLevel" → ✅ "LeadBuilt"
+- ❌ "Go Highlevel" → ✅ "Lead Built"
+- ❌ "HighLevel" → ✅ "LeadBuilt"
+- ❌ "GHL" → ✅ "LeadBuilt"
+
+## Documentation Consistency
+
+### API Documentation
+- All OpenAPI titles should reference "LeadBuilt API V2"
+- Endpoint descriptions should use "LeadBuilt" consistently
+- Example data should reflect LeadBuilt branding
+- Error messages should reference LeadBuilt services
+
+### File Headers and Descriptions
+```json
+{
+  "info": {
+    "title": "LeadBuilt API V2 - [Module Name]",
+    "description": "API endpoints for [functionality] in the Lead Built platform",
+    "version": "2.0"
+  }
+}
+```
+
+### Common Phrases and Replacements
+- "GoHighLevel account" → "LeadBuilt account"
+- "HighLevel platform" → "Lead Built platform"
+- "GHL integration" → "LeadBuilt integration"
+- "GoHighLevel API" → "LeadBuilt API V2"
+- "HighLevel marketplace" → "LeadBuilt marketplace"
+
+## URL and Domain References
+
+### API Base URLs
+- Production: `https://services.leadbuilt.com/`
+- Documentation: Reference LeadBuilt domains
+- Webhook URLs: Use LeadBuilt-branded examples
+
+### Legacy URL Patterns to Update
+- Any references to `gohighlevel.com` domains
+- Legacy API endpoints with old branding
+- Marketplace URLs with old naming
+
+## Contact Information and Support
+
+### Updated Contact References
+- Support: Reference LeadBuilt support channels
+- Marketplace: `marketplace@leadbuilt.com` (if applicable)
+- Documentation: LeadBuilt documentation team
+
+### Terms of Service and Legal
+- Update references to LeadBuilt terms of service
+- Ensure compliance documentation reflects current branding
+- Legal notices should reference LeadBuilt entities
+
+## Code Examples and Samples
+
+### API Request Examples
+```javascript
+// Correct branding in comments and examples
+const leadBuiltAPI = new LeadBuiltAPI({
+  apiKey: 'your-leadbuilt-api-key'
+});
+
+// Get contacts from Lead Built platform
+const contacts = await leadBuiltAPI.contacts.list();
+```
+
+### Response Examples
+```json
+{
+  "success": true,
+  "message": "Data retrieved from LeadBuilt successfully",
+  "data": {
+    "platform": "Lead Built",
+    "version": "2.0"
+  }
+}
+```
+
+## Marketplace and Integration References
+
+### App Descriptions
+- "Integrate with the Lead Built platform"
+- "LeadBuilt marketplace application"
+- "Built for LeadBuilt users"
+
+### OAuth and Authentication
+- "Authenticate with LeadBuilt"
+- "LeadBuilt OAuth 2.0 implementation"
+- "Access Lead Built platform resources"
+
+## File and Directory Naming
+
+### Consistent Naming Patterns
+- Use kebab-case for file and directory names
+- Avoid legacy brand names in new file names
+- Maintain consistency with existing structure
+
+### Documentation Files
+- README files should prominently feature LeadBuilt branding
+- Changelog entries should reference LeadBuilt updates
+- License files should reflect current brand ownership
+
+## Quality Assurance Checklist
+
+### Before Publishing Documentation
+- [ ] All instances of "GoHighLevel" replaced with "LeadBuilt"
+- [ ] All instances of "Go Highlevel" replaced with "Lead Built"
+- [ ] API titles include "LeadBuilt API V2"
+- [ ] Contact information updated to LeadBuilt channels
+- [ ] Example URLs use LeadBuilt domains
+- [ ] Code examples use LeadBuilt variable names
+- [ ] Legal and compliance references updated
+
+### Regular Maintenance
+- Search for legacy brand names periodically
+- Update any new documentation with correct branding
+- Ensure third-party integrations reference current brand
+- Validate external links point to LeadBuilt resources

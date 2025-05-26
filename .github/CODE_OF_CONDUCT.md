@@ -39,7 +39,7 @@ Examples of representing a project or community include using an official projec
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project team at [support@gohighlevel.com](mailto:support@gohighlevel.com).
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project team at [support@leadbuilt.com](mailto:support@leadbuilt.com).
 
 All complaints will be reviewed and investigated promptly and fairly.
 

@@ -5,7 +5,7 @@
       "post": {
         "operationId": "get-access-token",
         "summary": "Get Access Token",
-        "description": "Use Access Tokens to access GoHighLevel resources on behalf of an authenticated location/company.",
+        "description": "Use Access Tokens to access LeadBuilt resources on behalf of an authenticated location/company.",
         "parameters": [],
         "requestBody": {
           "required": true,
@@ -383,7 +383,7 @@
           "redirect_uri": {
             "type": "string",
             "description": "The redirect URI for your application",
-            "example": "https://myapp.com/oauth/callback/gohighlevel"
+            "example": "https://myapp.com/oauth/callback/leadbuilt"
           }
         },
         "required": [

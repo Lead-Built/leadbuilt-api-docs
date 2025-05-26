@@ -448,7 +448,7 @@
           },
           "referrer": {
             "type": "string",
-            "example": "https://staging.gohighlevel.com"
+            "example": "https://staging.leadbuilt.com"
           },
           "fbEventId": {
             "type": "string",

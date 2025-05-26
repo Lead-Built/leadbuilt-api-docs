@@ -2,7 +2,7 @@
 
 ## Wrapper functions
 
-HighLevel provides functions to render contextual data & some utilities that can help developers customize experience for the user.
+LeadBuilt provides functions to render contextual data & some utilities that can help developers customize experience for the user.
 
 ### 1. Local Storage and Cookies Management:
 

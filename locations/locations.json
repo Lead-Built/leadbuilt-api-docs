@@ -342,7 +342,7 @@
           },
           "website": {
             "type": "string",
-            "example": "https://gohighlevel.com/"
+            "example": "https://leadbuilt.com/"
           },
           "timezone": {
             "type": "string",
@@ -399,7 +399,7 @@
           },
           "website": {
             "type": "string",
-            "example": "https://gohighlevel.com/"
+            "example": "https://leadbuilt.com/"
           },
           "timezone": {
             "type": "string",

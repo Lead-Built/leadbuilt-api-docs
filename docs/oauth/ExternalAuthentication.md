@@ -1,6 +1,6 @@
 # External Authentication
 
-External authentication enables developers to authenticate HighLevel users using their credentials with the developer’s system before installing the application on HighLevel.
+External authentication enables developers to authenticate LeadBuilt users using their credentials with the developer’s system before installing the application on LeadBuilt.
 
 This feature allows you to configure custom authentication fields as necessary, such as:
 
@@ -16,7 +16,7 @@ Navigate to Developer Marketplace > My Apps > select your app and click on ‘Ex
 ## OAuth 2.0
 
 Adding OAuth v2 Authentication to Marketplace Apps
-This document outlines the process of configuring OAuth 2.0 authentication for external calls within Marketplace apps. Currently, only the "Authorization Code" grant type is supported. HighLevel manages token pairs and includes them in custom actions and triggers, enabling a wide range of integration possibilities.
+This document outlines the process of configuring OAuth 2.0 authentication for external calls within Marketplace apps. Currently, only the "Authorization Code" grant type is supported. LeadBuilt manages token pairs and includes them in custom actions and triggers, enabling a wide range of integration possibilities.
 
 ### 1. Configuration
 
@@ -74,7 +74,7 @@ If auto-refresh is disabled, the connection will break after token expiration. T
 <li> 
 <b>Test API:</b>
 
-Configure a test API endpoint (ideally a GET call requiring no special configuration) to validate the token. HighLevel will call this API to check token validity. If the test fails and auto-refresh is enabled, Marketplace will attempt to refresh the token.
+Configure a test API endpoint (ideally a GET call requiring no special configuration) to validate the token. LeadBuilt will call this API to check token validity. If the test fails and auto-refresh is enabled, Marketplace will attempt to refresh the token.
 The access token is included by default in all API calls. If your API requires additional configuration for the test call, click the "More Options" button to add the necessary options.
 
 </li>

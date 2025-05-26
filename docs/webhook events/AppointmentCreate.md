@@ -81,7 +81,7 @@ Called whenever an appointment is created
   "appointment": {
     "id": "0007BWpSzSwfiuSl0tR2",
     "address": "https://example.com/meeting",
-    "title": "Appointment with GHL Dev team",
+    "title": "Appointment with LeadBuilt Dev team",
     "calendarId": "BqTwX8QFwXzpegMve9EQ",
     "contactId": "9NkT25Vor1v4aQatFsv2",
     "groupId": "9NkT25Vor1v4aQatFsv2",

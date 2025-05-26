@@ -1,0 +1,81 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# LeadBuilt API V2 Documentation Rules
+
+## Project Overview
+This repository contains the official documentation for the **LeadBuilt API V2**, designed to help developers integrate with the Lead Built platform. The documentation is structured using OpenAPI specifications and Markdown files.
+
+## Key Files and Structure
+
+### Main Configuration
+- [toc.json](mdc:toc.json) - Table of contents defining the documentation structure and navigation
+- [README.md](mdc:README.md) - Project overview and contribution guidelines
+- [LICENSE](mdc:LICENSE) - Project license information
+
+### Documentation Structure
+The project is organized into API modules, each containing:
+- JSON files with OpenAPI specifications
+- Markdown files for detailed documentation
+- Examples and use cases
+
+### Core API Modules
+- [oauth/](mdc:oauth) - OAuth 2.0 authentication and authorization
+- [contacts/](mdc:contacts) - Contact management endpoints
+- [companies/](mdc:companies) - Company/account management
+- [locations/](mdc:locations) - Sub-account (formerly locations) management
+- [campaigns/](mdc:campaigns) - Marketing campaign management
+- [workflows/](mdc:workflows) - Automation workflow endpoints
+- [opportunities/](mdc:opportunities) - Sales pipeline management
+- [calendars/](mdc:calendars) - Calendar and appointment booking
+- [conversations/](mdc:conversations) - Messaging and communication
+- [forms/](mdc:forms) - Form builder and submission handling
+- [funnels/](mdc:funnels) - Sales funnel management
+- [emails/](mdc:emails) - Email marketing and templates
+- [payments/](mdc:payments) - Payment processing and invoicing
+- [products/](mdc:products) - Product catalog management
+- [users/](mdc:users) - User management and permissions
+- [medias/](mdc:medias) - Media library and file management
+- [surveys/](mdc:surveys) - Survey creation and response handling
+- [social-media-posting/](mdc:social-media-posting) - Social media management
+- [marketplace/](mdc:marketplace) - Marketplace app integration
+- [saas-api/](mdc:saas-api) - SaaS-specific endpoints
+
+### Documentation Guidelines
+- [docs/oauth/](mdc:docs/oauth) - OAuth implementation guides
+- [docs/webhook events/](mdc:docs/webhook%20events) - Webhook event documentation
+- [docs/marketplace modules/](mdc:docs/marketplace%20modules) - Marketplace integration guides
+
+## Naming Conventions
+- **Brand Name**: Use "LeadBuilt" (not "GoHighLevel" or "Go Highlevel")
+- **Platform Reference**: Use "Lead Built platform" when referring to the service
+- **API Version**: Always specify "LeadBuilt API V2"
+- **File Naming**: Use kebab-case for directories and files
+- **JSON Files**: OpenAPI specification files use the pattern `{module}/{module}.json`
+
+## Development Guidelines
+1. All API endpoints should be documented with complete OpenAPI specifications
+2. Include request/response examples for all endpoints
+3. Provide clear error code documentation
+4. Maintain consistency with LeadBuilt branding throughout
+5. Follow the existing directory structure when adding new modules
+6. Update [toc.json](mdc:toc.json) when adding new documentation sections
+
+## Common Tasks
+- **Adding New API Module**: Create directory with `{module}.json` OpenAPI spec
+- **Updating Documentation**: Modify relevant JSON files and update table of contents
+- **Adding Examples**: Include in the OpenAPI specification under examples section
+- **Webhook Documentation**: Add to [docs/webhook events/](mdc:docs/webhook%20events) directory
+
+## File Extensions
+- `.json` - OpenAPI specifications
+- `.md` - Markdown documentation
+- `.mdc` - Cursor rule files (this file type)
+
+## Important Notes
+- This is a documentation-only repository (no executable code)
+- All changes should maintain compatibility with the LeadBuilt platform
+- Follow the contribution guidelines in [README.md](mdc:README.md)
+- Ensure all references use "LeadBuilt" instead of legacy "GoHighLevel" naming

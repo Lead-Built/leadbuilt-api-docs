@@ -1,0 +1,104 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# LeadBuilt API Structure and OpenAPI Guidelines
+
+## OpenAPI Specification Structure
+Each API module follows a consistent OpenAPI 3.0 structure:
+
+### Standard File Pattern
+- Each module has its own directory (e.g., `contacts/`, `companies/`)
+- Main specification file: `{module}/{module}.json`
+- Additional documentation in `docs/` subdirectories
+
+### Common OpenAPI Components
+
+#### Authentication
+All endpoints use OAuth 2.0 Bearer token authentication:
+```json
+{
+  "securitySchemes": {
+    "bearer": {
+      "type": "http",
+      "scheme": "bearer"
+    }
+  }
+}
+```
+
+#### Standard Response Patterns
+- **Success Responses**: 200, 201, 204
+- **Error Responses**: 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found), 422 (Validation Error)
+- **Rate Limiting**: 429 (Too Many Requests)
+
+#### Common Parameters
+- `locationId` - Sub-account identifier (formerly location)
+- `contactId` - Contact identifier
+- `limit` - Pagination limit (default: 20, max: 100)
+- `offset` - Pagination offset
+- `startAfter` - Cursor-based pagination
+
+## API Module Categories
+
+### Core CRM Modules
+- [contacts/contacts.json](mdc:contacts/contacts.json) - Contact management
+- [companies/companies.json](mdc:companies/companies.json) - Company records
+- [opportunities/opportunities.json](mdc:opportunities/opportunities.json) - Sales pipeline
+
+### Communication Modules
+- [conversations/conversations.json](mdc:conversations/conversations.json) - Messaging
+- [emails/emails.json](mdc:emails/emails.json) - Email campaigns
+- [social-media-posting/social-media-posting.json](mdc:social-media-posting/social-media-posting.json) - Social media
+
+### Marketing & Sales Modules
+- [campaigns/campaigns.json](mdc:campaigns/campaigns.json) - Marketing campaigns
+- [funnels/funnels.json](mdc:funnels/funnels.json) - Sales funnels
+- [forms/forms.json](mdc:forms/forms.json) - Lead capture forms
+- [surveys/surveys.json](mdc:surveys/surveys.json) - Survey tools
+
+### Business Operations
+- [calendars/calendars.json](mdc:calendars/calendars.json) - Appointment booking
+- [workflows/workflows.json](mdc:workflows/workflows.json) - Automation
+- [payments/payments.json](mdc:payments/payments.json) - Payment processing
+- [invoices/invoices.json](mdc:invoices/invoices.json) - Billing
+
+### Platform Management
+- [locations/locations.json](mdc:locations/locations.json) - Sub-account management
+- [users/users.json](mdc:users/users.json) - User management
+- [marketplace/marketplace.json](mdc:marketplace/marketplace.json) - App marketplace
+- [saas-api/saas-api.json](mdc:saas-api/saas-api.json) - SaaS features
+
+## Documentation Standards
+
+### Endpoint Documentation Requirements
+1. **Summary**: Brief description of the endpoint purpose
+2. **Description**: Detailed explanation of functionality
+3. **Parameters**: All query, path, and body parameters
+4. **Request Examples**: Sample requests with realistic data
+5. **Response Examples**: Success and error response samples
+6. **Error Codes**: Specific error scenarios and codes
+
+### LeadBuilt-Specific Conventions
+- Use "LeadBuilt" in all API descriptions and titles
+- Reference "Lead Built platform" for platform-wide features
+- Maintain consistency with LeadBuilt branding
+- Use "sub-account" instead of "location" in new documentation
+
+### Webhook Integration
+- Webhook events documented in [docs/webhook events/](mdc:docs/webhook%20events)
+- Authentication details in [docs/oauth/WebhookAuthentication.md](mdc:docs/oauth/WebhookAuthentication.md)
+- Event payload examples included in relevant module documentation
+
+## Navigation and Discovery
+- Main navigation defined in [toc.json](mdc:toc.json)
+- OAuth documentation starts with [docs/oauth/Overview.md](mdc:docs/oauth/Overview.md)
+- Country codes available in [docs/country list/Country.md](mdc:docs/country%20list/Country.md)
+- Marketplace integration guides in [docs/marketplace modules/](mdc:docs/marketplace%20modules)
+
+## Validation and Testing
+- All JSON files should be valid OpenAPI 3.0 specifications
+- Examples should use realistic LeadBuilt data
+- Endpoint URLs should follow RESTful conventions
+- Response schemas should be complete and accurate

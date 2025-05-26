@@ -506,11 +506,11 @@
           },
           "privacyPolicy": {
             "type": "string",
-            "example": "https://app.gohighlevel.com/privacy_policy"
+            "example": "https://app.leadbuilt.com/privacy_policy"
           },
           "termsConditions": {
             "type": "string",
-            "example": "https://app.gohighlevel.com/terms-of-service"
+            "example": "https://app.leadbuilt.com/terms-of-service"
           },
           "theme": {
             "type": "string",
