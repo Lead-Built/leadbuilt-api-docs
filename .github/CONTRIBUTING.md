@@ -1,6 +1,6 @@
-# Contributing to GoHighLevel API V2 Docs
+# Contributing to LeadBuilt API V2 Docs
 
-Thank you for your interest in contributing! We welcome suggestions, improvements, and fixes that help enhance the GoHighLevel developer experience.
+Thank you for your interest in contributing! We welcome suggestions, improvements, and fixes that help enhance the LeadBuilt developer experience.
 
 This guide outlines how you can get started and what we expect from contributors.
 
@@ -44,7 +44,7 @@ This guide outlines how you can get started and what we expect from contributors
     ```
 
 7. **Open a Pull Request**  
-    - Go to the original repo: [GoHighLevel/api-v2-docs](https://github.com/GoHighLevel/api-v2-docs)
+    - Go to the original repo: [LeadBuilt/api-v2-docs](https://github.com/LeadBuilt/api-v2-docs)
     - Click **“Compare & pull request”**
     - Describe your changes clearly and concisely
     - Submit the pull request for review
@@ -82,7 +82,7 @@ Please make sure that:
 
 If you’re not sure how or where to contribute:
 
-- Open a [GitHub issue](https://github.com/GoHighLevel/api-v2-docs/issues)
-- Ask in the [HighLevel Community](https://www.facebook.com/groups/gohighlevel)
+- Open a [GitHub issue](https://github.com/LeadBuilt/api-v2-docs/issues)
+- Ask in the [LeadBuilt Community](https://www.facebook.com/groups/leadbuilt)
 
 We’re excited to collaborate with you—thanks for helping improve our documentation!

@@ -547,7 +547,7 @@
           },
           "shareLink": {
             "type": "string",
-            "example": "https://affiliates.gohighlevel.com/?share=1eM2UgkfaECOYyUdCo9Pa",
+            "example": "https://affiliates.leadbuilt.com/?share=1eM2UgkfaECOYyUdCo9Pa",
             "description": "Share Link for snapshot"
           }
         }

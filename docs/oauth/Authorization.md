@@ -1,12 +1,12 @@
 # Authorization
 
-HighLevel supports the Authorization Code Grant flow with v2 APIs. Please find the step-by-step procedure to use and understand the OAuth 2.0 flow.
+LeadBuilt supports the Authorization Code Grant flow with v2 APIs. Please find the step-by-step procedure to use and understand the OAuth 2.0 flow.
 
 Here's a [Loom Video](https://www.loom.com/share/f32384758de74a4dbb647e0b7962c4ea?sid=0907a66d-a160-4b51-bcd4-c47ebae37fca) to walk you through the entire process.
 
 ### 1. Register an OAuth app
 
-1. Go to the [Marketplace](https://marketplace.gohighlevel.com)
+1. Go to the [Marketplace](https://marketplace.leadbuilt.com)
 2. Sign up for a developer account.
 3. Go to "My Apps," and click on "Create App."
 4. Fill up the required details in the form, then your app will be created.
@@ -27,9 +27,9 @@ To generate the Authorization Page URL for an app, replace the `client_id`, `red
 1. For standard Auth URL flow:
 
 ```
-https://marketplace.gohighlevel.com/oauth/chooselocation?
+https://marketplace.leadbuilt.com/oauth/chooselocation?
 response_type=code&
-redirect_uri=https://myapp.com/oauth/callback/gohighlevel&
+redirect_uri=https://myapp.com/oauth/callback/leadbuilt&
 client_id=CLIENT_ID&
 scope=conversations/message.readonly conversations/message.write
 ```
@@ -39,7 +39,7 @@ scope=conversations/message.readonly conversations/message.write
 ```
 https://marketplace.leadconnectorhq.com/oauth/chooselocation?
 response_type=code&
-redirect_uri=https://myapp.com/oauth/callback/gohighlevel&
+redirect_uri=https://myapp.com/oauth/callback/leadbuilt&
 client_id=CLIENT_ID&
 scope=conversations/message.readonly conversations/message.write
 ```
@@ -49,7 +49,7 @@ scope=conversations/message.readonly conversations/message.write
 When a user grants access, their browser is redirected to the specified redirect URI, and the Authorization Code is passed inside the code query parameter.
 
 ```
-https://myapp.com/oauth/callback/gohighlevel?code=7676cjcbdc6t76cdcbkjcd09821jknnkj
+https://myapp.com/oauth/callback/leadbuilt?code=7676cjcbdc6t76cdcbkjcd09821jknnkj
 ```
 
 ## OAuth FAQs
@@ -74,7 +74,7 @@ You can write a wrapper function on your end to achieve this. You can use it for
 
 ### What are current rate limits for API 2.0?
 
-GHL has implemented rate limits on our public V2 APIs using OAuth to ensure optimal performance and stability. These limits have been adjusted to:
+LeadBuilt has implemented rate limits on our public V2 APIs using OAuth to ensure optimal performance and stability. These limits have been adjusted to:
 
 Burst limit: A maximum of 100 API requests per 10 seconds for each Marketplace app (i.e., client) per resource (i.e., Location or Company).
 Daily limit: 200,000 API requests per day for each Marketplace app (i.e., client) per resource (i.e., Location or Company).
@@ -89,7 +89,7 @@ To monitor your limited usage, refer to the following API response headers:
 'X-RateLimit-Max': The maximum request limit in the specified time interval
 'X-RateLimit-Remaining': The remaining number of requests in the current time interval
 
-Example: If the 'GHL-APP' is installed on two locations (Sub-account A and Sub-account B) on the GHL Marketplace, the rate limits for each location would be as follows:
+Example: If the 'LEADBUILT-APP' is installed on two locations (Sub-account A and Sub-account B) on the LeadBuilt Marketplace, the rate limits for each location would be as follows:
 
-1. Sub-account A: 'GHL-APP' can make 200,000 API requests per day and 100 API requests per 10 seconds.
-2. Sub-account B: 'GHL-APP' can make 200,000 API requests per day and 100 API requests per 10 seconds.
+1. Sub-account A: 'LEADBUILT-APP' can make 200,000 API requests per day and 100 API requests per 10 seconds.
+2. Sub-account B: 'LEADBUILT-APP' can make 200,000 API requests per day and 100 API requests per 10 seconds.

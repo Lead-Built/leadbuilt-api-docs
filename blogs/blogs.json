@@ -928,7 +928,7 @@
             "type": "string"
           },
           "canonicalLink": {
-            "example":"https://tryghl.blog/post/testing-unsplash",
+            "example":"https://tryleadbuilt.blog/post/testing-unsplash",
             "type": "string"
           },
           "publishedAt": {
@@ -1035,7 +1035,7 @@
             "type": "string"
           },
           "canonicalLink": {
-            "example":"https://tryghl.blog/post/testing-unsplash",
+            "example":"https://tryleadbuilt.blog/post/testing-unsplash",
             "type": "string"
           },
           "publishedAt": {
@@ -1096,7 +1096,7 @@
           },
           "name": {
             "type": "string",
-            "example": "HighLevel"
+            "example": "LeadBuilt"
           },
           "locationId": {
             "type": "string",
@@ -1108,7 +1108,7 @@
           },
           "canonicalLink": {
             "type": "string",
-            "example": "https://tryghl.blog/post/technology"
+            "example": "https://tryleadbuilt.blog/post/technology"
           }
         },
         "required": [
@@ -1143,7 +1143,7 @@
           },
           "label": {
             "type": "string",
-            "example": "HighLevel"
+            "example": "LeadBuilt"
           },
           "locationId": {
             "type": "string",
@@ -1155,7 +1155,7 @@
           },
           "canonicalLink": {
             "type": "string",
-            "example": "https://tryghl.blog/doc/category/agency-growth"
+            "example": "https://tryleadbuilt.blog/doc/category/agency-growth"
           },
           "urlSlug": {
             "type": "string",

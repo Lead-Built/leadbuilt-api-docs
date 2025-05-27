@@ -1,6 +1,6 @@
 # User Context in Marketplace Apps
 
-HighLevel provides a secure mechanism for accessing authenticated user information through signed tokens. This guide explains how you can generate and use `Shared Secret` key to access user context in secured manner.
+LeadBuilt provides a secure mechanism for accessing authenticated user information through signed tokens. This guide explains how you can generate and use `Shared Secret` key to access user context in secured manner.
 
 ## Setting Up Shared Secret
 
@@ -22,7 +22,7 @@ There are two ways in which you can access this data in your frontend, depending
 
 ### 1. Custom JavaScript Implementation
 
-If you're using custom JavaScript injected into HighLevel pages, use the `exposeSessionDetails` method:
+If you're using custom JavaScript injected into LeadBuilt pages, use the `exposeSessionDetails` method:
 
 ```javascript
 async function getUserData() {
@@ -167,7 +167,7 @@ When accessing from a Location context, the decrypted data will include an addit
 
 For a complete example implementation, you can refer to our marketplace app template repository:
 
-[GoHighLevel Marketplace App Template](https://github.com/GoHighLevel/ghl-marketplace-app-template/tree/main)
+[LeadBuilt Marketplace App Template](https://github.com/LeadBuilt/leadbuilt-marketplace-app-template/tree/main)
 
 The relevant implementation can be found in the `/decrypt-sso` endpoint of the template.
 

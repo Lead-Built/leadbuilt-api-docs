@@ -2914,7 +2914,7 @@
           },
           "emailMessageId": {
             "type": "string",
-            "description": "This contains the email message id (only for Email type). Use this ID to send inbound replies to GHL to create a threaded email.",
+            "description": "This contains the email message id (only for Email type). Use this ID to send inbound replies to LeadBuilt to create a threaded email.",
             "example": "rnGyqh2F6uBrIkfhFo9A"
           },
           "messageId": {
